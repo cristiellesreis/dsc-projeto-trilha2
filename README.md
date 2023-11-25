@@ -5,7 +5,6 @@ Projeto desenvolvido para a trilha II do Descodificadas!
 ## Screenshots
 
 <img src="/screenshots mobile.png">
-<img src="/screen-3.png">
 
 ## Tecnologias utilizadas
 
@@ -26,7 +25,7 @@ Projeto desenvolvido para a trilha II do Descodificadas!
 - Formulário para coletar cadastro
 - Rodapé com a frase criado por seunome
 
-  ## Aprimoramento na trilha 2:
+  ##Aprimoramento na trilha 2:
   
 - metatags e tags semânticas
 - dropdown ou sidebar
