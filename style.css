@@ -2,16 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--default-font);
 }
 
 :root{
     --default-font:'mohave';
-    --branco-texto:#FFFFFF;
-    --dourado-texto:#AD7702;
-    --preto-texto:#000000;
-    --fonte-principal:'mohave';
-    --botao-dourado: #AD7702;
-    --botao-dourado-efeito: #FFFFFF;
+    --cor-texto:#FFFFFF;
+    --cor-texto-secundaria: #000000;
+    --cor-destaque:#AD7702;
     --cor-de-fundo:#000000;
 }
 
@@ -21,24 +19,34 @@ body{
     height: 100vh;
 }
 
+.logo img{
+    width: 5rem;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
 .menu a{
-    color: white;
+    color:var(--cor-texto);
     text-decoration: none;
-    font-family: var(--default-font);
     display: block;
     padding: 0.5rem;
     text-transform: uppercase;
     font-size: 1.3rem;
-
 }
 
 .menu a:hover{
-    color: #AD7702;
-    
+    color: var(--cor-destaque);
 }
 
-.logo img{
-    width: 5rem;
+#btn-mobile{
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 #cabecalho{
@@ -55,28 +63,12 @@ body{
     z-index: 200;
 }
 
-.menu{
-    display: flex;
-    list-style: none;
-    gap: 0.5rem;
-
-}
-
-#btn-mobile{
-    display: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-
 .capa{
     height: 20rem;
     width: 100%;
     background-image: url(img/capadosite.svg) ;
     background-size: cover;
     background-position: center;
-    filter: brightness();
 }
 
 .titulo-capa{
@@ -86,23 +78,19 @@ body{
     justify-content: center;
     text-transform: uppercase;
     align-items: center;
-
 }
+
 .titulo-capa h1 {
-    font-family: var(--default-font);
     font-size: 3rem;
     text-align: center;
-    color: #ffffff;
+    color:var(--cor-texto);
 }
 
 .titulo-capa h3 {
-    font-family: var(--default-font);
     font-size: 2rem;
-    color: #ffffff;
+    color:var(--cor-texto);
     text-align: center;
 }
-
-
 
 .intro-historia{
     display: flex;
@@ -114,20 +102,16 @@ body{
 .subtitulo{
     display: flex;
     justify-content: center;
-
 }
+
 .subtitulo h2{
-    color: #AD7702;
-    font-family: var(--default-font);
+    color: var(--cor-destaque);
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
     margin: 2rem 0 2rem;
 }
 
-.texto{
-    max-width: 60rem;
-}
 .container-inicio-historia{
     display: flex;
     justify-content: center;
@@ -138,12 +122,14 @@ body{
     align-items: center;
 }
 
-
 .container-inicio-historia span{
-    color: white;
-    font-family: var(--default-font);
+    color:var(--cor-texto);
     font-size: 1.2rem;
 } 
+
+.texto{
+    max-width: 60rem;
+}
 
 .botao-intro-historia{
     display: flex;
@@ -153,11 +139,10 @@ body{
 
 .intro-historia button{
     border-radius: 0.8rem;
-    background-color: #AD7702;
+    background-color: var(--cor-destaque);
     height: 3.5rem;
-    font-family: var(--default-font);
     font-size: 1.5rem;
-    color: #ffffff;
+    color:var(--cor-texto);
     cursor: pointer;
     text-transform: uppercase;
     border: none;
@@ -168,6 +153,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .container-servicos-oferecidos{
     width: 100%;
 }
@@ -178,7 +164,6 @@ body{
 
 .card-servico{
     display: flex;
-    
     background-color: #ffffff;
     height: 9rem;
     border-radius: 1rem;
@@ -191,14 +176,11 @@ body{
 }
 
 .card-servico span{
-    font-family: var(--default-font);
-    color: black;
+    color: var(--cor-texto-secundaria);
     font-weight: bold;
     font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
-
-
 }
 
 .hamburguer-centralizado{
@@ -232,20 +214,17 @@ body{
 }
 
 .titulo-card-cardapio{
-    font-family: "mohave";
     font-size: 4rem;
-    color: #AD7702;
+    color: var(--cor-destaque);
     font-weight: bold;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-
 }
 
 .categorias-cardapio{
-    font-family: "mohave";
     font-size: 1.5rem;
-    color: #000000;
+    color: var(--cor-texto-secundaria);
     font-weight: bold;
     text-align: center;
     display: flex;
@@ -259,9 +238,8 @@ body{
 }
 
 .categorias-cardapio h5:hover{
-    color: #AD7702;
+    color: var(--cor-destaque);
 }
-
 
 .itens-categorias-cardapio{
     display: flex;
@@ -271,7 +249,6 @@ body{
 }
 
 .lista-itens{
-    font-family: "mohave";
     display: grid;
     text-align: justify;
     justify-content: space-between;
@@ -283,7 +260,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
-
 }
 
 .container-linha{
@@ -294,7 +270,6 @@ body{
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
-
 }
 
 .nome-item{
@@ -303,7 +278,6 @@ body{
     font-size: 1.2rem;
     width: 8rem;
     padding: 0 1rem 0 0;
-   
 }
 
 .pontilhado{
@@ -313,7 +287,7 @@ body{
 }
 
 .preco{
-    color: #AD7702;
+    color: var(--cor-destaque);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -331,7 +305,6 @@ body{
     display: none;
 }
 
-
 .infos-contato{
     width: 100%;
     display: flex;
@@ -347,12 +320,11 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 5rem
-
 }
+
 .frase-lema{
-    font-family: "mohave";
     font-size: 3rem;
-    color: #ffffff;
+    color:var(--cor-texto);
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -377,13 +349,11 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
-    
 }
 
 .endereco{
-    font-family: "mohave";
     font-size: 1rem;
-    color: #ffffff;
+    color:var(--cor-texto);
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -396,7 +366,6 @@ body{
     display: flex;
     justify-content: center;
 }
-
 
 .grid {
     display: grid;
@@ -452,10 +421,9 @@ body{
 }
 
 .texto-grid{
-    font-family: "mohave";
     font-size: 5rem;
     text-transform: uppercase;
-    color: #AD7702;
+    color: var(--cor-destaque);
     display: flex;
     font-weight: bold;
     justify-content: center;
@@ -464,20 +432,17 @@ body{
 }
 
 .texto-grid-arroba{
-    font-family: "mohave";
     font-size: 2rem;
     text-transform: uppercase;
-    color: wheat;
+    color:var(--cor-texto);
     display: flex;
     justify-content: center;
-    
 }
 
 .texto-grid-hashtag{
-    font-family: "mohave";
     font-size: 2rem;
     text-transform: uppercase;
-    color: white;
+    color:var(--cor-texto);
     display: flex;
     font-weight: bold;
     justify-content: center;
@@ -502,28 +467,25 @@ footer{
 .logotipo-rodape img{
     width: 6rem;
 }
+
 .redes-sociais{
-    color: #ffffff;
-    font-family: var(--default-font);
+    color:var(--cor-texto);
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
 }
 
 .dev-nome{
-    color: #ffffff;
-    font-family: "mohave";
+    color:var(--cor-texto);
     font-size: 1.2rem;
     text-align: center;
 }
-
 
 .video{
     display: flex;
     justify-content: center;
     margin: 4rem 0rem;
 }
-
 
 .carrossel{
     display: flex;
@@ -555,7 +517,7 @@ footer{
 .foto-galeria {
     -ms-overflow-style: none;
     scrollbar-width: none; 
-  }
+}
 
 .arrow-left, .arrow-right{
     position: absolute;
@@ -567,7 +529,7 @@ footer{
     line-height: 250px;
     width: 40px;
     text-align: center;
-    color: #ffffff;
+    color:var(--cor-texto);
     cursor: pointer;
     border:none;
     background: none;
@@ -598,11 +560,10 @@ footer{
 }
 
 .formulario h1{
-    font-family: "mohave";
     font-size: 5rem;
     font-weight: bold;
     text-align: center;
-    color: #ffffff;
+    color:var(--cor-texto);
     text-transform: uppercase;
     margin-top: 10rem;
 }
@@ -631,11 +592,9 @@ footer{
     outline: none;
     margin-top: 1rem;
     font-size: 1.5rem;
-    font-family: "mohave";
     color: gray;
     align-items: center;
     outline: none;
-
 }
 
 .formulario textarea{
@@ -645,25 +604,22 @@ footer{
     width: 42rem;
     margin-top: 2rem;
     font-size: 2rem;
-    font-family: "mohave";
     color: gray;
     height: 8rem;
 }
 
 .itens-dados ::placeholder{
-    color: #AD7702;
-    font-family: "mohave";
+    color: var(--cor-destaque);
     font-size: 1rem;
     font-weight: bold;
     justify-content: center;
 }
 
 input[type=submit]{
-    background-color: #AD7702;
+    background-color: var(--cor-destaque);
     width: 13rem;
-    font-family: "mohave";
     font-size: 1.5rem;
-    color: #ffffff;
+    color:var(--cor-texto);
     text-transform: uppercase;
     font-weight: bold;
     height: 4rem;
@@ -689,7 +645,6 @@ input[type=submit]{
     background-color: transparent;
     border: none;
     cursor: pointer;
-
 }
 
 .card-hamburguers{
@@ -702,7 +657,6 @@ input[type=submit]{
     align-items: center;
     margin: 2rem;
     justify-content: flex-end;
-
 }
 
 .card-hamburguers img{
@@ -711,12 +665,11 @@ input[type=submit]{
 }
 
 .card-hamburguers span{
-    font-family: "mohave";
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    color: #AD7702;
+    color: var(--cor-destaque);
 }
 
 .historia{
@@ -735,11 +688,9 @@ input[type=submit]{
 }
 
 .container-historia span{
-    color: white;
-    font-family: var(--default-font);
+    color:var(--cor-texto);
     font-size: 1.2rem;
     text-align: center;
-
 }
 
 .imagem-chef img{
@@ -748,7 +699,6 @@ input[type=submit]{
     display: flex;
     align-items: center;
     border-radius: 2rem;
-
 }
 
 .texto-sobre{
@@ -757,7 +707,6 @@ input[type=submit]{
     text-align: justify;
     display: flex;
     align-items: center;
-
 }
 
 .icones{
@@ -793,16 +742,14 @@ input[type=submit]{
 
 .botoes-contato button{
     border-radius: 0.8rem;
-    background-color: #AD7702;
+    background-color: var(--cor-destaque);
     height: 3.5rem;
-    font-family: var(--default-font);
     font-size: 1.5rem;
-    color: #ffffff;
+    color:var(--cor-texto);
     cursor: pointer;
     text-transform: uppercase;
     border: none;
     width: 12rem;
-
 }
 
 .confirmacao-reserva{
@@ -815,9 +762,8 @@ input[type=submit]{
 .confirmacao-reserva span{
     height: 3rem;
     border-radius: 1rem;
-    font-family: 'circular';
     font-size: 1.3rem;
-    color: #ad7702;
+    color: var(--cor-destaque);
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -825,7 +771,7 @@ input[type=submit]{
     font-weight: bold;
     padding: 1rem;
     text-align: center;
-    border: 1px solid #ad7702;
+    border: 1px solid var(--cor-destaque);
 }
 
 .oculto{
@@ -845,7 +791,7 @@ input[type=submit]{
         width: 100%;
         top: 70px;
         right: 0px;
-        background-color: #000000;
+        background-color: var(--cor-de-fundo);
         height: 0px;
         z-index: 1000;
         transition: 0.6s ;
@@ -896,7 +842,6 @@ input[type=submit]{
 
     .container-item{
         width: 30rem;
-
     }
 
     .grid{
@@ -928,14 +873,11 @@ input[type=submit]{
     input[type=submit]{
         width: 9rem;
         font-size: 1rem;
-        
     }
     
 }
 
 @media screen and (max-width: 361px) {
-
-    
 
     .titulo-capa h1 {
         font-size: 2.5rem;
@@ -969,7 +911,6 @@ input[type=submit]{
 
     .container-item{
         width: 18rem;
-
     }
 
     .imagem-hamburguer-prato {
@@ -987,17 +928,14 @@ input[type=submit]{
     .grid{
         grid-template-columns: repeat(3, 7rem);
         grid-auto-rows: 5rem;
-
     }
 
     .laterais-grid {
         display: none;
-
     }
 
     .mapa{
         width: 100vw;
-
     }
 
     .imagem-chef img {
@@ -1023,7 +961,6 @@ input[type=submit]{
     input[type=submit]{
         width: 9rem;
         font-size: 1rem;
-
     }
 
     .confirmacao-reserva span{
@@ -1033,11 +970,5 @@ input[type=submit]{
 
     footer{
         padding: 0 2rem;
-
     }
-
-
-
-    
 }
-
