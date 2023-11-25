@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mohave&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/logotipo.svg">
+        <link rel="stylesheet" href="img/fontawesome-free-6.4.2-web/css/all.css">
+        <title>Lado b.burguer</title>
+    </head>
+    
+    <body>
+        <header id="cabecalho">
+            <a class="logo" href="index.html"><img src="img/logotipo.svg" alt="logotipo"></a>
+            <nav id="navegacao">
+                <button id="btn-mobile"><i class="fa-solid fa-bars fa-2xl"  style="color: #ffffff;"></i></button>
+                <ul class="menu">
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="sobre-nos.html">sobre nós</a></li>
+                    <li><a href="eventos.html">eventos</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="reservas.html">reservas</a></li>
+                </ul>
+            </nav> 
+        </header> 
+
+        <main>
+            <div>
+                <div class="capa">
+                    <div class="titulo-capa">
+                        <h1>Lado B. Burguer</h1>
+                        <h3>hamburgueria</h3>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="subtitulo">
+                <h2>reservas</h2>
+            </div>
+    
+            <section class="formulario">
+                <div class="container-dados">
+                   <form class="itens-dados" onsubmit="exibirConfirmacao()">
+                        <input type="text" name="nome" placeholder="NOME:">
+                        <input type="e-mail" name="email" placeholder="E-MAIL:">
+                        <input type="telefone" name="telefone" placeholder="TELEFONE:">
+                        <input type="number" name="quantidade" min="1" max="10" placeholder="QUANTIDADE DE PESSOAS:">
+                        <input type="date" name="dia">
+                        <input type="time" name="usr_horario">
+                        <textarea name="mensagem" id="mensagem" placeholder="MENSAGEM:"></textarea>
+                        <div><input type="submit" value="Realizar Reserva"></div>
+                   </form>
+                   
+                </div>
+    
+                <div class="confirmacao-reserva oculto" id="mensagem-reserva">
+                    <div><span>reserva efetuada com sucesso!</span></div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <div class="rodape">
+                <div class="logotipo-rodape">
+                    <a href="index.html"><img src="img/logotipo.svg" alt="logotipo lado b burguer"></a>
+                </div>
+    
+                <div class="redes-sociais">
+                    <p>Siga-nos nas redes sociais:</p>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ad7702;"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ad7702;"></i></a>
+                    <a href="https://twitter.com/login?lang=pt" target="_blank"><i class="fa-brands fa-twitter" style="color: #ad7702;"></i></a>
+                </div>
+    
+                <div class="dev-nome">
+                    Desenvolvido por Cristielle Reis. Descodificadas 2023.
+                </div>
+            </div>
+        
+        </footer>
+        <script src="arquivo.js"></script>
+    
+    </body>
+</html>
+    
+
+

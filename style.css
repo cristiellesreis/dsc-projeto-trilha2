@@ -1,0 +1,1043 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --default-font:'mohave';
+    --branco-texto:#FFFFFF;
+    --dourado-texto:#AD7702;
+    --preto-texto:#000000;
+    --fonte-principal:'mohave';
+    --botao-dourado: #AD7702;
+    --botao-dourado-efeito: #FFFFFF;
+    --cor-de-fundo:#000000;
+}
+
+body{
+    background-color:var(--cor-de-fundo);
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--default-font);
+    display: block;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+
+}
+
+.menu a:hover{
+    color: #AD7702;
+    
+}
+
+.logo img{
+    width: 5rem;
+}
+
+#cabecalho{
+    box-sizing: border-box;
+    height: 7rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    transition: 0.3s;
+    position: fixed;
+    z-index: 200;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+
+}
+
+#btn-mobile{
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.capa{
+    height: 20rem;
+    width: 100%;
+    background-image: url(img/capadosite.svg) ;
+    background-size: cover;
+    background-position: center;
+    filter: brightness();
+}
+
+.titulo-capa{
+    position: relative;
+    top: 7rem;
+    word-wrap: break-word;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+
+}
+.titulo-capa h1 {
+    font-family: var(--default-font);
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.titulo-capa h3 {
+    font-family: var(--default-font);
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+.intro-historia{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+
+}
+.subtitulo h2{
+    color: #AD7702;
+    font-family: var(--default-font);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem 0 2rem;
+}
+
+.texto{
+    max-width: 60rem;
+}
+.container-inicio-historia{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: 0rem 3rem;
+    align-items: center;
+}
+
+
+.container-inicio-historia span{
+    color: white;
+    font-family: var(--default-font);
+    font-size: 1.2rem;
+} 
+
+.botao-intro-historia{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+
+.intro-historia button{
+    border-radius: 0.8rem;
+    background-color: #AD7702;
+    height: 3.5rem;
+    font-family: var(--default-font);
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    width: 10rem;
+}
+
+.servicos{
+    display: flex;
+    justify-content: center;
+}
+.container-servicos-oferecidos{
+    width: 100%;
+}
+
+.container-servicos-oferecidos img{
+    width: 5rem;
+}
+
+.card-servico{
+    display: flex;
+    
+    background-color: #ffffff;
+    height: 9rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 10rem;
+    padding: 1rem;
+}
+
+.card-servico span{
+    font-family: var(--default-font);
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+
+}
+
+.hamburguer-centralizado{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.hamburguer-centralizado img{
+    width: 26rem;
+}
+.container-cardapio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.container-cardapio img{
+    height: 20rem;
+    border-radius: 2rem;
+    margin: 4rem 0 4rem;
+}
+
+
+.cards-cardapio{
+    background-color: #ffffff;
+    padding: 2rem;
+    width: 60rem;
+    border-radius: 1rem;
+}
+
+.titulo-card-cardapio{
+    font-family: "mohave";
+    font-size: 4rem;
+    color: #AD7702;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+
+}
+
+.categorias-cardapio{
+    font-family: "mohave";
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.categorias-cardapio h5{
+    margin: 2rem;
+    text-transform: uppercase;
+}
+
+.categorias-cardapio h5:hover{
+    color: #AD7702;
+}
+
+
+.itens-categorias-cardapio{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lista-itens{
+    font-family: "mohave";
+    display: grid;
+    text-align: justify;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.container-item{
+    width: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+}
+
+.container-linha{
+    display: flex;
+}
+
+.container-nome-preco{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+
+}
+
+.nome-item{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    width: 8rem;
+    padding: 0 1rem 0 0;
+   
+}
+
+.pontilhado{
+    border-bottom: 0.2rem dotted gray;
+    width: 36rem;
+    height: 1.5rem;
+}
+
+.preco{
+    color: #AD7702;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: 5rem;
+    padding: 0 0 0 1rem;
+}
+
+.descricao-item{
+    color: gray;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.oculta{
+    display: none;
+}
+
+
+.infos-contato{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container-lema{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem
+
+}
+.frase-lema{
+    font-family: "mohave";
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 20rem;
+}
+
+.imagem-hamburguer-prato{
+    width: 40rem;
+}
+
+.container-localizacao{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 1rem;
+    align-content: center;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    
+}
+
+.endereco{
+    font-family: "mohave";
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.grid-fotos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    grid-auto-rows: 13rem;
+    position: relative;
+    z-index: 10;
+    margin-top: 3rem;
+}
+
+.item {
+	margin: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-conteudo .item-1 {
+    grid-area: 3 / 3/ span 1/ span 1;
+    background-image: url(img/gride6.svg);
+}
+
+.grid-conteudo .item-2 {
+    grid-area: 1 / 2 / span 1/ span 2;    
+    background-image: url(img/gride3.png); 
+}
+
+.grid-conteudo .item-3 {
+    grid-area: 2 / 2 / span 2 / span 1;    
+    background-image: url(img/grid1.svg);
+}
+
+.grid-conteudo .item-4 {
+    grid-area: 1 / 1 / span 2 / span 1;    
+    background-image: url(img/gride4.svg);   
+}
+
+.grid-conteudo .item-5 {
+    grid-area: 2 / 3 / span 1/span 1;
+    background-image: url(img/gride2.png);  
+}
+
+.grid-conteudo .item-6 {
+    grid-area: 3 / 1 / span 1 / span 1;
+    background-image: url(img/gride5.svg);  
+}
+
+.laterais-grid{
+    justify-content: space-between;
+    width: 68rem;
+    margin-left: 6rem;
+    display: flex;
+    position: absolute;
+}
+
+.texto-grid{
+    font-family: "mohave";
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #AD7702;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.texto-grid-arroba{
+    font-family: "mohave";
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.texto-grid-hashtag{
+    font-family: "mohave";
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer{
+    background-color: #2D2C2C;
+}
+
+.rodape{
+    padding: 2rem 0;
+}
+
+.logotipo-rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.logotipo-rodape img{
+    width: 6rem;
+}
+.redes-sociais{
+    color: #ffffff;
+    font-family: var(--default-font);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.dev-nome{
+    color: #ffffff;
+    font-family: "mohave";
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.video{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0rem;
+}
+
+
+.carrossel{
+    display: flex;
+    justify-content: center;
+    margin: 0rem 0rem 3rem;
+}
+
+.carrossel-container{
+    position:relative;
+    padding: 15px;
+    max-width: 62rem;
+}
+
+.galeria-fotos{
+    overflow-x: auto;
+}
+
+.foto-galeria{
+    display: flex;
+    flex-flow:row nowrap;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.foto-galeria::-webkit-scrollbar {
+    display: none;
+}
+
+.foto-galeria {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
+
+.arrow-left, .arrow-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 80px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    border:none;
+    background: none;
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+
+.arrow-right{
+    left: auto;
+    right: 0;
+    background: none;
+}
+
+.arrow-left:hover, .arrow-right:hover{
+    opacity: 1;
+}
+
+.item-evento{
+    width: 30rem;
+    height: 20rem;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+}
+
+.item-evento-atual{
+    opacity: 1;
+}
+
+.formulario h1{
+    font-family: "mohave";
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 10rem;
+}
+
+.container-dados{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.itens-dados{
+    display: grid;
+}
+
+.itens-dados div{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario input{
+    width: 42rem;
+    height: 2rem;
+    outline: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: "mohave";
+    color: gray;
+    align-items: center;
+    outline: none;
+
+}
+
+.formulario textarea{
+    line-height: 2rem;
+    padding-left: 1rem;
+    resize: none;
+    width: 42rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: "mohave";
+    color: gray;
+    height: 8rem;
+}
+
+.itens-dados ::placeholder{
+    color: #AD7702;
+    font-family: "mohave";
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+input[type=submit]{
+    background-color: #AD7702;
+    width: 13rem;
+    font-family: "mohave";
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.container-cards-hamburgueres{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hamburgueres{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.hamburgueres button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.card-hamburguers{
+    background-color: white;
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    align-items: center;
+    margin: 2rem;
+    justify-content: flex-end;
+
+}
+
+.card-hamburguers img{
+    width: 13rem; 
+    height: 10rem; 
+}
+
+.card-hamburguers span{
+    font-family: "mohave";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #AD7702;
+}
+
+.historia{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-historia{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    margin: 0rem 3rem;
+}
+
+.container-historia span{
+    color: white;
+    font-family: var(--default-font);
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+.imagem-chef img{
+    width: 25rem;
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+
+}
+
+.texto-sobre{
+    max-width: 35rem;
+    text-transform: initial;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+
+}
+
+.icones{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem;
+    flex-wrap: wrap;
+}
+
+.icones img{
+    width: 6rem;
+}
+
+.icones div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icones span{
+    text-transform: capitalize;
+}
+
+.botoes-contato{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.botoes-contato button{
+    border-radius: 0.8rem;
+    background-color: #AD7702;
+    height: 3.5rem;
+    font-family: var(--default-font);
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    width: 12rem;
+
+}
+
+.confirmacao-reserva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.confirmacao-reserva span{
+    height: 3rem;
+    border-radius: 1rem;
+    font-family: 'circular';
+    font-size: 1.3rem;
+    color: #ad7702;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ad7702;
+}
+
+.oculto{
+    display: none;
+}
+
+
+@media screen and (max-width: 840px) {
+
+    #btn-mobile{
+        display: block;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #000000;
+        height: 0px;
+        z-index: 1000;
+        transition: 0.6s ;
+        visibility: hidden;
+        overflow-y: hidden;
+        margin-top: 1rem;
+    }
+
+
+    #navegacao.active .menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid gray;
+    }
+
+
+    #btn-mobile{
+        display: flex;
+        padding: 0.5rem 1rem;
+    }
+
+
+    .servicos {
+        overflow-x: auto;
+    }
+
+    .hamburguer-centralizado img {
+        width: 22rem;
+    }
+   
+    .cards-cardapio{
+        width: 40rem;
+    }
+
+    .categorias-cardapio h5{
+        margin: 1rem;
+    }
+
+    .pontilhado {
+        width: 16rem;
+    }
+
+    .container-item{
+        width: 30rem;
+
+    }
+
+    .grid{
+        grid-template-columns: repeat(3, 12rem);
+        grid-auto-rows: 12rem;
+    }
+
+    
+    .item {
+        margin: 0.5rem;
+     } 
+
+    .laterais-grid {
+        display: none;
+    }
+
+    .container-historia span{
+        max-width: 21rem;
+    }
+
+    .formulario input{
+        width: 32rem;
+    }
+    
+    .formulario textarea{
+        width: 32rem;  
+    }
+
+    input[type=submit]{
+        width: 9rem;
+        font-size: 1rem;
+        
+    }
+    
+}
+
+@media screen and (max-width: 361px) {
+
+    
+
+    .titulo-capa h1 {
+        font-size: 2.5rem;
+    }
+
+    .titulo-capa h3{
+        font-size: 1.5rem;
+    }
+
+    .servicos {
+        overflow-x: auto;
+        justify-content: start;
+    }
+
+    .hamburguer-centralizado img {
+        width: 18rem;
+    }
+
+    .cards-cardapio{
+        width: 20rem;
+    }
+
+    .categorias-cardapio h5{
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .pontilhado{
+        width: 4rem;
+    }
+
+    .container-item{
+        width: 18rem;
+
+    }
+
+    .imagem-hamburguer-prato {
+        width: 20rem;
+    }
+
+    .texto-grid {
+        font-size: 3rem;
+    }
+
+    .item {
+       margin: 0.3rem;
+    }
+
+    .grid{
+        grid-template-columns: repeat(3, 7rem);
+        grid-auto-rows: 5rem;
+
+    }
+
+    .laterais-grid {
+        display: none;
+
+    }
+
+    .mapa{
+        width: 100vw;
+
+    }
+
+    .imagem-chef img {
+        width: 19rem;
+    }
+
+    .container-historia span{
+        max-width: 18rem;
+    }
+
+    .carrossel-container{
+        max-width: 20rem;
+    }
+
+    .formulario input{
+        width: 18rem;
+    }
+    
+    .formulario textarea{
+        width: 18rem;  
+    }
+
+    input[type=submit]{
+        width: 9rem;
+        font-size: 1rem;
+
+    }
+
+    .confirmacao-reserva span{
+        font-size: .9rem;
+    }
+
+
+    footer{
+        padding: 0 2rem;
+
+    }
+
+
+
+    
+}
+

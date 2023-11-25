@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mohave&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/logotipo.svg">
+        <link rel="stylesheet" href="img/fontawesome-free-6.4.2-web/css/all.css">
+        <title>Lado b.burguer</title>
+    </head>
+    
+    <body>
+        <header id="cabecalho">
+            <a class="logo" href="index.html"><img src="img/logotipo.svg" alt=""></a>
+            <nav id="navegacao">
+                <button id="btn-mobile"><i class="fa-solid fa-bars fa-2xl"  style="color: #ffffff;"></i></button>
+                <ul class="menu">
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="sobre-nos.html">sobre nós</a></li>
+                    <li><a href="eventos.html">eventos</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                    <li><a href="reservas.html">reservas</a></li>
+                </ul>
+            </nav>   
+        </header> 
+
+        <div>
+            <div class="capa">
+                <div class="titulo-capa">
+                    <h1>Lado B. Burguer</h1>
+                    <h3>hamburgueria</h3>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="intro-historia">
+                <div class="container-inicio-historia">
+                    <div>
+                        <div class="subtitulo">
+                            <h2>tá com fome? vem com a gente!</h2>
+                        </div>
+
+                        <div class="texto">
+                            <span>Bem-vindo ao lado B.Burguer! Nossa hamburgueria é um lugar onde os sabores se encontram para criar uma experiência única e satisfatória para os amantes de hambúrgueres.Aqui, buscamos oferecer aos nossos clientes uma refeição saborosa e memorável, repleta de ingredientes frescos e de alta qualidade.<br>Desde o momento em que você entra em nossa hamburgueria, é envolvido por uma atmosfera acolhedora e um aroma irresistível de hambúrgueres grelhados na chapa. Nossa equipe simpática e atenciosa está pronta para recebê-lo e garantir que sua visita seja excepcional.<br>Nossos hambúrgueres são feitos com carne selecionada, moída diariamente para garantir a suculência e o sabor autêntico. Combinamos técnicas tradicionais com um toque de criatividade para criar opções de hambúrgueres que agradam a todos os paladares.</span>
+                        </div>
+                        
+                        <div class="botao-intro-historia">
+                            <a href="sobre-nos.html">
+                                <button type="button">saiba mais</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="hamburguer-centralizado">
+                <img src="img/hamburguer1.svg" alt="imagem de um hamburguer centralizado">
+            </div>
+
+            <section class="container-cardapio">
+                <div class="cards-cardapio">
+                    <div class="titulo-card-cardapio">menu</div>
+
+                    <div class="categorias-cardapio">
+                        <h5 onclick="exibirHamburgueres()">hamburgueres</h5>
+                        <h5 onclick="exibirAcompanhamentos()">acompanhamentos</h5>
+                        <h5 onclick="exibirBebidas()">bebidas</h5>
+                    </div>
+
+                    <div class="itens-categorias-cardapio" id="hamburgueres">
+                        <div class="lista-itens">
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Cheeseburger</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$25,00</span>
+                                </div>
+                                <span class="descricao-item">Hambúrguer de carne bovina, queijo cheddar derretido, alface, tomate, cebola e molho especial. Servido com batatas fritas.</span>
+                            </div>
+
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Bacon Burger</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$28,00</span>
+                                </div>
+                                <span class="descricao-item">Hambúrguer de carne bovina, bacon crocante, queijo, alface, tomate e maionese defumada. Servido com batatas fritas.</span>
+                            </div>
+
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">BBQ Burger</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$30,00</span><br>
+                                </div>
+                                <span class="descricao-item">Hambúrguer de carne bovina, queijo cheddar derretido, alface, tomate, cebola e molho especial. Servido com batatas fritas.</span>
+                            </div>
+
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Veggie Burger</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$20,00</span>
+                                </div>
+                                <span class="descricao-item">Hambúrguer vegetariano à base de leguminosas, acompanhado de queijo, alface, tomate e maionese vegana. Servido com batatas fritas.</span>
+                            </div>
+
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Portobello Burger</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$28,00</span>
+                                </div>
+                                <span class="descricao-item">Cogumelo Portobello grelhado, queijo de cabra, rúcula e molho de balsâmico reduzido. Servido com batatas fritas.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="acompanhamentos" class="oculta itens-categorias-cardapio">
+                        <div class="lista-itens">
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Batatas Fritas</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$20,00</span>
+                                </div>
+                                <span class="descricao-item">batata asterix crocante e sequinha.</span>
+                            </div>
+
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Onion Rings</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$28,00</span>
+                                </div>
+                                <span class="descricao-item">cebola empanada crocante e sequinha.</span>
+                            </div>
+
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Batatas Rústica</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$22,00</span>
+                                </div>
+                                <span class="descricao-item">batata asterix com casca e ervas, macia por dentro e crocante por fora.</span>
+                            </div>
+
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Salada Verde</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$12,00</span>
+                                </div>
+                                <span class="descricao-item">Mix de folhas frescas (alface, rúcula, agrião), Tomate-cereja, Pepino fatiado, Cebola roxa em fatias finas, Croutons crocantes e Molho de Salada (vinagrete, mostarda e mel, ou outro de sua preferência)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bebidas" class="oculta itens-categorias-cardapio">
+                        <div class="lista-itens">
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Refrigerantes</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$8,00</span>
+                                </div>
+                            </div>
+                            
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Sucos Naturais</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$10,00</span>
+                                </div>
+                                <span class="descricao-item">Laranja, Limão, Abacaxi, Morango, Maçã, Melancia, Manga, Uva, Acerola, Kiwi.</span>
+                            </div>
+
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Cervejas Artesanais</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$12,00</span>
+                                </div>
+                                <span class="descricao-item">Dogfish Head Brewery, Sierra Nevada Brewing Co., Stone Brewing, Founders Brewing Co., Lagunitas Brewing Company.</span>
+                            </div>
+
+                            <div class="container-item">
+                                <div class="container-linha">
+                                    <span class="nome-item">Milkshakes</span>
+                                    <div class="pontilhado"></div>
+                                    <span class="preco">r$12,00</span>
+                                </div>
+                                <span class="descricao-item">baunilha, chocolate, morango</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>   
+
+            <section class="infos-contato">
+                    <div class="container-lema">
+                        <div class="frase-lema">o melhor burguer está aqui deste lado!!!</div>
+                        <img src="img/hamburguer2.svg" alt="hamburguer no prato" class="imagem-hamburguer-prato">
+                    </div>
+
+                    <div>
+                        <div class="texto-grid">compartilhe com a gente!!!</div>
+                        <div class="texto-grid-arroba">@ladob.burguer</div>
+                    </div>
+
+                    <div class="grid-fotos">
+                        
+                        <div class="grid grid-conteudo">
+                            <div class="item item-1"></div>
+                            <div class="item item-2"></div>
+                            <div class="item item-3"></div>
+                            <div class="item item-4"></div>
+                            <div class="item item-5"></div>
+                            <div class="item item-6"></div>
+                        </div> 
+                        
+                        <div class="laterais-grid">
+                            <div><img src="img/metadehambuerguer1.svg" alt="metade de um hamburguer" width="220" height="690"></div>
+                            <div><img src="img/metadehamburguer2.svg" alt="metade de um hamburguer" width="300" height="690"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="texto-grid-hashtag">use a #vemproladob e marque a gente nas suas redes!</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="rodape">
+                <div class="logotipo-rodape">
+                    <a href="index.html"><img src="img/logotipo.svg" alt="logotipo lado b burguer"></a>
+                </div>
+    
+                <div class="redes-sociais">
+                    <p>Siga-nos nas redes sociais:</p>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #ad7702;"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ad7702;"></i></a>
+                    <a href="https://twitter.com/login?lang=pt" target="_blank"><i class="fa-brands fa-twitter" style="color: #ad7702;"></i></a>
+                </div>
+    
+                <div class="dev-nome">
+                    Desenvolvido por Cristielle Reis. Descodificadas 2023.
+                </div>
+            </div>
+        </footer>
+
+        <script src="arquivo.js"></script>
+        
+    </body>
+</html>
