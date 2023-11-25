@@ -4,7 +4,7 @@ Projeto desenvolvido para a trilha II do Descodificadas!
 
 ## Screenshots
 
-<img src="/mobile.png">
+<img src="/mobile.png"><img src="/mobile-2.png"><img src="/mobile-3.png">
 
 ## Tecnologias utilizadas
 
