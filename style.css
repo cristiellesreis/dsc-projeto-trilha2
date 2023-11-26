@@ -10,6 +10,7 @@
     --cor-texto:#FFFFFF;
     --cor-texto-secundaria: #000000;
     --cor-destaque:#AD7702;
+    --cor-efeito:#d7b263;
     --cor-de-fundo:#000000;
 }
 
@@ -149,6 +150,10 @@ body{
     width: 10rem;
 }
 
+.intro-historia button :hover{
+    background-color: var(--cor-efeito);
+}
+
 .servicos{
     display: flex;
     justify-content: center;
@@ -192,6 +197,7 @@ body{
 .hamburguer-centralizado img{
     width: 26rem;
 }
+
 .container-cardapio{
     display: flex;
     flex-direction: column;
@@ -750,6 +756,10 @@ input[type=submit]{
     text-transform: uppercase;
     border: none;
     width: 12rem;
+}
+
+.botoes-contato button :hover{
+   background-color: var(--cor-efeito);
 }
 
 .confirmacao-reserva{
