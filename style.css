@@ -149,6 +149,12 @@ body{
     width: 10rem;
 }
 
+.intro-historia button:hover{
+    background-color:#e6c785;
+    color: #AD7702;
+}
+
+
 .servicos{
     display: flex;
     justify-content: center;
@@ -750,6 +756,11 @@ input[type=submit]{
     text-transform: uppercase;
     border: none;
     width: 12rem;
+}
+
+.botoes-contato button:hover{
+    background-color:#e6c785;
+    color: #AD7702;
 }
 
 .confirmacao-reserva{
